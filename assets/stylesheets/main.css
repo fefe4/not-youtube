@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/************************this is just a reset read after this********************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*****************************start reading the code here******************************/
+
+body{
+	display:flex;
+}
+
+header {
+	height:56px;
+	background-color: #fff;
+	position:absolute;
+	width:100%
+}
+
+nav{
+	display:flex;
+	width:100%;
+	height:100%;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.logo{
+	display:flex;
+	width:185px;
+	height:40px;
+	justify-content: space-between;
+}
+
+img{
+	margin: 0 10px;
+	width:22px;
+}
+
+#logo {
+	height:30px;
+	width:auto
+}
+#bell {
+	height:22px;
+}
+
+.formContainer {
+ width:50%;
+ display:flex;
+ justify-content: center;
+ 
+ align-content: center;
+}
+
+form{
+	display:flex;
+	width:100%;
+
+}
+
+form input {
+	width:100%;
+	padding: 6px 10px;
+	border-color:#bebebe;
+	border-width:1px;
+	border-style: solid;
+	border-radius: 2%;
+	color:grey;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+form button {
+	border-color:#d3d3d3;
+	background-color: #f8f8f8;
+	border-radius: 2%;
+	border-width:1px;
+	border-style: solid;
+}
+
+input:focus {
+	outline-color:rgb(39, 39, 221);	
+	outline-style:ridge;
+	outline-width: 0.5px;
+	color:black;
+}
+
+ button:hover{
+	background-color:#ececec
+}
+
+main {
+	display:flex;
+ 	top: 56px;
+	position:absolute;
+	left:0;
+	right:0;
+	background-color: #ecebeb;
+}
+
+section {
+	margin:24px;
+}
+
+section h2{
+	font-size: larger;
+	font-weight:525;
+	margin: 24px 0;
+}
+
+.videoStats{
+	display:flex;
+	justify-content: space-between;
+	border-bottom: grey;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding-bottom: 15px;
+}
+
+.videoStats div{
+	display:flex;	
+}
+
+.description {
+	display:flex;
+	margin-top: 24px;
+	justify-content: space-between;
+}
+
+.channel {
+	width:50px;
+	height:auto;
+	border-radius: 50%;
+}
+
+.description div {
+	display:flex;
+	align-self: center;
+}
+
+.description div div {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.subs {
+	color:grey;
+}
+
+.description a {
+	background-color: rgb(182, 25, 25);
+	color:white;
+	font-size: 14px;
+	font-weight:	500;
+	padding:8px 12px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.comments {
+
+	width:60%;
+}
+
+aside {
+	background-color: rgb(255, 255, 255);
+	width:30%;
+	margin: 24px 24px 24px 0
+}
+
+
+
+.linkVideo {
+	width:168px;
+	height:94px;
+	margin-left:0px;
+	margin-right:4px;
+}
+
+.videoContainer {
+	display:flex;
+	margin-bottom:4px;
+	width:100%;
+}
+
+h5{
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 15px;
+}
+
+.videoDescription {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.videoContainer p {
+	color:#615c5c;
+	font-size: 13px;
+	
+}
+
+img:hover {
+	cursor: pointer;
+}
+
+.user {
+	border-radius: 50%;	
+	height: 30px;
+	width:auto;
+}
+
